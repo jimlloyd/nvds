@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Noe Valley Dance Space - San Francisco, California</title>
+
+<link rel="stylesheet" href="styles3.css" type="text/css">
+
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+}
+-->
+
+
+
+/*** set the width and height to match your images **/
+
+#slideshow {
+    position:relative;
+    height:550px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+body,td,th {
+	color: #606647;
+}
+a:link {
+	color: #AF328A;
+}
+a:visited {
+	color: #AF328A;
+}
+a:hover {
+	color: #2F3327;
+}
+a:active {
+	color: #AF328A;
+}
+.style22 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.style23 {color: #AF2E89}
+.style24 {color: #AF2E89; font-size: 14px; }
+.style25 {
+	color: #C0389B;
+	font-weight: bold;
+	font-size: 14px;
+}
+.style28 {font-weight: bold}
+.style30 {color: #AF2E89; font-size: 14px; font-weight: bold; }
+.style31 {font-family: Arial, Helvetica, sans-serif}
+.style32 {	color: #606647;
+	font-weight: bold;
+}
+.style33 {	color: #626458;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+
+
+<script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+
+<script type="text/javascript">
+
+/*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+</script>
+</head>
+
+<body>
+<div align="center">
+  <table width="1000" border="0" cellspacing="0" cellpadding="0">
+  
+    <tr> 
+      <td colspan="2" valign="top"><img src="images/NVDS_top5.jpg" alt="NVDS" width="1000" height="193" /></td>
+    </tr>
+    <tr>
+      <td width="229" valign="top" bgcolor="#E9F3E0"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>        </tr>
+        <tr>
+          <td height="25" bgcolor="#FFFFFF">&nbsp;</td>
+        </tr>
+        <tr>
+          <td bgcolor="#E9F3E0"><div align="center">
+              <div align="center">
+                <div align="center">
+                  <div align="center">
+                    <p><span class="style22"><strong>IMPORTANT NEWS</strong></span><span class="style30"><br />
+                    </span></p>
+                    <p class="style24"><span class="style22"><strong>Summer Camp</strong> registration now open! Please click here for <br />
+                          <a href="Summer Camp Flier 2013.pdf"><strong>Summer Camp Info</strong></a> and<br />
+                        <a href="Summer Camp 2013 Registration form.pdf"><strong>Summer Camp Registration</strong></a></span></p>
+                    <p class="style24"><span class="style33">Fall 2013 Registration Day<br />
+August 24th from 11-4pm </span></p>
+                    <p class="style24"><span class="style31"><strong>2013 Performances </strong><br />
+                          <a href="http://vimeo.com/ondemand/nvds2013saturday720p" target="_blank">Saturday Low Resolution</a><br />
+                          <a href="http://vimeo.com/ondemand/nvds2013saturday1080p" target="_blank">Saturday High Resolution</a><br />
+                          <a href="http://vimeo.com/ondemand/nvds2013sunday720p" target="_blank">Sunday Low Resolution</a><br />
+                        <a href="http://vimeo.com/ondemand/nvds2013sunday1080p" target="_blank">Sunday High Resolution</a></span></p>
+                    <p class="style24"><span class="style22"><span class="style23"><a href="mailto:info@noevalleydance.com">Please contact NVDS</a> </span>for <br />
+                      class availability.</span><br />
+                    </p>
+                    <p class="style24"><a href="http://www.facebook.com/pages/Noe-Valley-Dance-Space/395558433843698" target="_blank"><img src="images/FaceBook-Logo.png" alt="Noe Valley Dance" width="20" height="20" border="0" /></a></p>
+                    </div>
+                </div>
+                <p>&nbsp;</p>
+                </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td bgcolor="#E9F3E0"><div align="center"><a style="width: 130px; height: 150px; font-family: arial; font-size: 11px; text-align: center; display: block;" href="http://gocitykids.parentsconnect.com/attraction/noe-valley-dance-space-1021-sanchez-street-san-francisco-ca-94114-us?xrs=pp10-social-phase2-badge-kids-party-place-LOCAL-san-francisco-ca-usa-noe-valley-dance-space-1021-sanchez-street-san-francisco-ca-94114-us"><img style="padding: 0px 15px 0px 15px; display: block;" src="http://www.parentsconnect.com/images-pclocal/parentspicks10/nominate-for-rightrail.gif"/>Nominated for best kids' party place in San Francisco, CA</a><br />
+          </div></td>
+        </tr>
+      </table></td>
+      <td width="771" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        
+        <tr>
+          <td width="24" height="25" bgcolor="#E9F3E0">&nbsp;</td>
+          <td height="25" bgcolor="#E9F3E0"><div align="center"><span class="style15 style28"><a href="index.html">home</a> | <a href="bios.html">instructors</a> | <a href="classes.html">classes</a> | <a href="calendar.html">calendar</a> | <a href="info.html">info</a> | <a href="gallery.html">gallery</a> | <a href="parties.html">parties</a></span></div></td>
+        </tr>
+
+        <tr>
+          <td>&nbsp;</td>
+          <td valign="top"><div align="left">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              
+              <tr>
+                <td width="97%">&nbsp;</td>
+              </tr>
+            </table>
+            </div>            <div align="left"></div>            <div align="left"></div>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="27%" valign="top">&nbsp;</td>
+                <td width="2%" valign="top">&nbsp;</td>
+                <td width="71%" valign="top"><span class="style15 style25">Instructors </span></td>
+              </tr>
+              <tr>
+                <td valign="top"><p align="left"><img src="images/Laura_01.jpg" alt="Laura Padierne" width="200" height="180" /></p>
+                    <p align="left"><img src="images/Laura_02.jpg" alt="dancer" width="200" height="262" /></p>
+                  </td>
+                <td valign="top"><div align="left"></div></td>
+                <td valign="top"><p class="style15"><strong>Ms. Laura Padierne Wexler (Director/Founder/Instructor) </strong>Founded NVDS in 2006.  She has been teaching Ballet, Jazz and Modern dance to children and adults for 16 years.  Her dance career started in Miami, Fl.   In 2001, she graduated from the University of Florida, Gainesville with a Bachelor of Fine Arts.  While at UF she had the opportunity to study, and perform, with ODC/San Francisco, Les Ballet Africains, Dance Brazil, Dance Alive!, and Garth Fagan Dance.  Laura has been awarded several scholarships, which have allowed her to further her dance education at prestigious programs and schools throughout the United States. These include: American Dance Festival, the Boston Ballet, Pacific Northwest Ballet, ODC/San Francisco (UF), and New World School of the Arts. </p>
+                  <p class="style15">Laura has worked and performed with several companies and choreographers across the bay area and in South Florida. She appeared as a dancer in the movie RENT (based on the Broadway show), directed by Christopher Columbus.  Her choreography has been chosen for presentation at the Kennedy Center.  Beyond the studio, she has her certification in Dance Healing from Shands Hospital in Gainesville, FL, where she worked as an artist in residence.<br />
+                    </p>
+                  <p class="style15">Miss Laura P Wexler is also currently a member of the Visual and Performing Arts Department at Sacred Heart Cathedral Prep, High School where she also teaches dance</p>
+                  <p align="left">&nbsp;</p>                    </td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td valign="top"><div align="left"><span class="style15"><img src="images/Nicole.jpg" alt="Nicole" width="200" height="303" /></span></div></td>
+                <td valign="top"><div align="left"></div></td>
+                <td valign="top"><div align="left" class="style15">Hailing from Johannesburg, South Africa, <strong>Nicole Bridgens </strong>has been teaching, performing and creating new works throughout California and South Africa. Nicole received her B.A. in Dance from California State University, Long Beach. While there, her choreography was chosen to represent CSULB at the American College Dance Festival, and later commissioned to be re-stage for Utah Valley University. Nicole participated in the Choreographic Residency program at San Francisco Conservatory of Dance and has also studied in Tel Aviv, Israel with Batsheva Dance Company. Her work has been shown in New York at the Young Choreographers Festival, in San Francisco at West Wave Dance Festivals &quot;3 or More&quot; concert and at The Garage as part of their Resident Artist Workshop (RAW). <br />
+                   <br />
+                  Nicole joined NVDS in 2009.
+                  <p align="left" class="style15"><br />
+                  </p>
+                </div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td valign="top"><img src="images/Samantha1.jpg" alt="Samantha" width="200" height="263" /></td>
+                <td valign="top">&nbsp;</td>
+                <td valign="top"><span class="style15">A bay area native, <strong>Samantha Beach Clark</strong> began her training under Damara Bennett and Henry Berg while spending summer’s training at American Ballet Theater (ABT).  She began her professional career dancing with the Oakland Ballet and Northern Ballet Theater.  In 2004, Miss Samantha moved to New York where she danced for the innovative Cedar Lake Ensemble , the Metropolitan Opera Ballet, and Nejila Yakin/Dance to name a few.  She has taught in San Francisco, New York and Connecticut.  Samantha is excited to be living back in San Francisco and joining the staff at Noe Valley Dance Space.</span></td>
+              </tr>
+            </table></td>
+          </tr>
+      </table>      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td valign="top">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td valign="top"><div align="center">415.341.2186  |  <a href="mailto:info@noevalleydance.com">info@noevalleydance.com</a>  |  950 Noe Street (at Alvarado) San Francisco, CA 94114</div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td valign="top">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td valign="top"><div align="center"><a href="http://www.j4design.com" target="_blank">created by J4 Design</a></div></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+</div>
+
+<map name="Map" id="Map"><area shape="rect" coords="179,64,245,92" href="index.html" />
+<area shape="rect" coords="249,67,345,95" href="bios.html" />
+<area shape="rect" coords="353,68,432,97" href="classes.html" />
+<area shape="rect" coords="439,67,520,93" href="calendar.html" />
+<area shape="rect" coords="523,66,568,91" href="info.html" />
+<area shape="rect" coords="578,63,646,92" href="gallery.html" />
+<area shape="rect" coords="654,62,717,95" href="parties.html" />
+</map></body>
+</html>

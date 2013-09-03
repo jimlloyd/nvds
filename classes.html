@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Noe Valley Dance Space - San Francisco, California</title>
+
+<link rel="stylesheet" href="styles3.css" type="text/css">
+
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+}
+-->
+
+
+
+/*** set the width and height to match your images **/
+
+#slideshow {
+    position:relative;
+    height:550px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+body,td,th {
+	color: #606647;
+}
+a:link {
+	color: #AF328A;
+}
+a:visited {
+	color: #AF328A;
+}
+a:hover {
+	color: #2F3327;
+}
+a:active {
+	color: #AF328A;
+}
+.style22 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.style23 {color: #AF2E89}
+.style24 {color: #AF2E89; font-size: 14px; }
+.style25 {
+	color: #C0389B;
+	font-weight: bold;
+	font-size: 14px;
+}
+.style26 {font-size: 14px; color: #C0389B;}
+.style28 {font-weight: bold}
+.style29 {color: #666666}
+.style30 {color: #AF2E89; font-size: 14px; font-weight: bold; }
+.style31 {font-family: Arial, Helvetica, sans-serif}
+.style32 {	color: #606647;
+	font-weight: bold;
+}
+.style33 {	color: #626458;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+
+
+<script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+
+<script type="text/javascript">
+
+/*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+</script>
+</head>
+
+<body>
+<div align="center">
+  <table width="1000" border="0" cellspacing="0" cellpadding="0">
+  
+    <tr> 
+      <td colspan="2" valign="top"><img src="images/NVDS_top5.jpg" alt="NVDS" width="1000" height="193" /></td>
+    </tr>
+    <tr>
+      <td width="229" valign="top" bgcolor="#E9F3E0"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>        </tr>
+        <tr>
+          <td height="25" bgcolor="#FFFFFF">&nbsp;</td>
+        </tr>
+        <tr>
+          <td bgcolor="#E9F3E0"><div align="center">
+              <div align="center">
+                <div align="center">
+                  <div align="center">
+                    <p><span class="style22"><strong>IMPORTANT NEWS</strong></span><span class="style30"><br />
+                    </span></p>
+                    <p class="style24"><span class="style22"><strong>Summer Camp</strong> registration now open! Please click here for <br />
+                          <a href="Summer Camp Flier 2013.pdf"><strong>Summer Camp Info</strong></a> and<br />
+                        <a href="Summer Camp 2013 Registration form.pdf"><strong>Summer Camp Registration</strong></a></span></p>
+                    <p class="style24"><span class="style33">Fall 2013 Registration Day<br />
+August 24th from 11-4pm </span></p>
+              <p class="style24"><span class="style31"><strong>2013 Performances </strong><br />
+                          <a href="http://vimeo.com/ondemand/nvds2013saturday720p" target="_blank">Saturday Low Resolution</a><br />
+                          <a href="http://vimeo.com/ondemand/nvds2013saturday1080p" target="_blank">Saturday High Resolution</a><br />
+                          <a href="http://vimeo.com/ondemand/nvds2013sunday720p" target="_blank">Sunday Low Resolution</a><br />
+                        <a href="http://vimeo.com/ondemand/nvds2013sunday1080p" target="_blank">Sunday High Resolution</a></span></p>
+                    <p class="style24"><span class="style22"><span class="style23"><a href="mailto:info@noevalleydance.com">Please contact NVDS</a> </span>for <br />
+                      class availability.</span><br />
+                    </p>
+                    <p class="style24"><a href="http://www.facebook.com/pages/Noe-Valley-Dance-Space/395558433843698" target="_blank"><img src="images/FaceBook-Logo.png" alt="Noe Valley Dance" width="20" height="20" border="0" /></a></p>
+                    </div>
+                </div>
+                <p>&nbsp;</p>
+                </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td bgcolor="#E9F3E0"><div align="center"><a style="width: 130px; height: 150px; font-family: arial; font-size: 11px; text-align: center; display: block;" href="http://gocitykids.parentsconnect.com/attraction/noe-valley-dance-space-1021-sanchez-street-san-francisco-ca-94114-us?xrs=pp10-social-phase2-badge-kids-party-place-LOCAL-san-francisco-ca-usa-noe-valley-dance-space-1021-sanchez-street-san-francisco-ca-94114-us"><img style="padding: 0px 15px 0px 15px; display: block;" src="http://www.parentsconnect.com/images-pclocal/parentspicks10/nominate-for-rightrail.gif"/>Nominated for best kids' party place in San Francisco, CA</a><br />
+          </div></td>
+        </tr>
+      </table></td>
+      <td width="771" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        
+        <tr>
+          <td width="24" height="25" bgcolor="#E9F3E0">&nbsp;</td>
+          <td height="25" bgcolor="#E9F3E0"><div align="center"><span class="style15 style28"><a href="index.html">home</a> | <a href="bios.html">instructors</a> | <a href="classes.html">classes</a> | <a href="calendar.html">calendar</a> | <a href="info.html">info</a> | <a href="gallery.html">gallery</a> | <a href="parties.html">parties</a></span></div></td>
+        </tr>
+
+        <tr>
+          <td>&nbsp;</td>
+          <td valign="top"><div align="left">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              
+              <tr>
+                <td width="97%">&nbsp;</td>
+              </tr>
+            </table>
+            </div>            <div align="left"></div>            <div align="left"></div>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="27%" valign="top">&nbsp;</td>
+                <td width="2%" valign="top">&nbsp;</td>
+                <td width="71%" valign="top"><span class="style15 style25">Class Descriptions</span></td>
+              </tr>
+              <tr>
+                <td valign="top"><p align="left"><img src="images/class1.jpg" alt="Laura Padierne" width="200" height="300" /></p>
+                    <p align="left"><img src="images/class2.jpg" alt="Laura Padierne" width="200" height="300" /></p>
+                  <p align="left"><img src="images/class3.jpg" alt="Laura Padierne" width="200" height="300" /></p></td>
+                <td valign="top"><div align="left"></div></td>
+                <td valign="top"><p align="left" class="style15"> <strong>Toddler Ballet (3-4 years old)</strong><br />
+                  The goal of this class is to introduce your child to the world of dance in a positive and nurturing atmosphere.  Your tiny dancers will learn classical ballet steps, fun strengthening/stretching exercises,  travel like a butterfly and create a dance landscape with their imaginations.  Musicality, shapes and lines, directional awareness and class etiquette will also be a focus of the toddler program.  Musical accompaniment for this class varies from Tchaikovsky’s Nutcracker to Disney’s the Little Mermaid.<br />
+                  </p>
+                    <p align="left" class="style15"><strong>Ballet I (4-5 years old)</strong><br />
+                      This class is a follow up to Toddler Ballet.  At this stage students are ready to incorporate more technical steps into their dance vocabulary.  In addition, they will focus on balance, musicality/rhythm, and body alignment.  Creativity continues to be cultivated as their own movement and ideas are incorporated into their class and performances.<br />
+                    </p>
+                  <p align="left" class="style15"><strong>Ballet II and up (5 years old and older)</strong><br />
+                    Once they’ve developed a solid foundation, NVDS students are ready for a more structured ballet class.  At these levels, students will engage in a full barre, center work, and refine their technique and memory skills.  While these levels incorporate a more structured dance program, they also continue to cultivate expression thru movement and take into account each child’s comfort level and goals.<br />
+                    </p>
+                  <p align="left" class="style15"><strong>Adult Ballet</strong><br />
+                    This class is offered to teenagers and adults. It is designed to work with the body's needs, building on alignment, strength and flexibility, as well as beauty and precision. The class follows a traditional format: barre work, stretching, center work, and across the floor concluding with an excerpt from a classical variation.<br />
+                    </p>
+                  <p align="left" class="style15"><strong>Hip Hop/Jazz (6 years +)</strong><br />
+                    This class explores the fundamentals of Jazz technique including isolations, placement and leaps and turns set to age appropriate Hip Hop and Pop music.  students in this class will also explore the grounded nature of Hip Hop and learn new choreography set to their favorite music.<br />
+                    **Not currently available on our schedule, please contact NVDS if interested.<br />
+                    </p>
+                  <p align="left" class="style15"><strong>Observation Classes</strong><br />
+                  All classes at NVDS are drop off and not open to viewing. Observation classes will be scheduled as part of the curriculum. There will be a number of days (disclosed on registration day) scheduled each semester when parents will be invited to attend their child's class.  This is to limit student distractions, so that they may get the most out of their hour.  Teachers will be available after class (and all classes) to discuss each child's progress, or parental concern.</p></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+      </table>      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td valign="top">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td valign="top"><div align="center">415.341.2186  |  <a href="mailto:info@noevalleydance.com">info@noevalleydance.com</a>  |  950 Noe Street (at Alvarado) San Francisco, CA 94114</div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td valign="top">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td valign="top"><div align="center"><a href="http://www.j4design.com" target="_blank">created by J4 Design</a></div></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+</div>
+
+<map name="Map" id="Map"><area shape="rect" coords="179,64,245,92" href="index.html" />
+<area shape="rect" coords="249,67,345,95" href="bios.html" />
+<area shape="rect" coords="353,68,432,97" href="classes.html" />
+<area shape="rect" coords="439,67,520,93" href="calendar.html" />
+<area shape="rect" coords="523,66,568,91" href="info.html" />
+<area shape="rect" coords="578,63,646,92" href="gallery.html" />
+<area shape="rect" coords="654,62,717,95" href="parties.html" />
+</map></body>
+</html>
