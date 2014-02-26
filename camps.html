@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Noe Valley Dance Space - San Francisco, California</title>
+    <link rel="stylesheet" href="styles3.css" type="text/css" />
+    <style type="text/css">/*
+<![CDATA[*/
+  <!--
+  body {
+       background-color: #FFFFFF;
+  }
+  -->
+
+
+
+  /*** set the width and height to match your images **/
+
+  #slideshow {
+    position:relative;
+    height:550px;
+  }
+
+  #slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+  }
+
+  #slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+  }
+
+  #slideshow IMG.last-active {
+    z-index:9;
+  }
+  body,td,th {
+       color: #606647;
+  }
+  a:link {
+       color: #AF328A;
+  }
+  a:visited {
+       color: #AF328A;
+  }
+  a:hover {
+       color: #2F3327;
+  }
+  a:active {
+       color: #AF328A;
+  }
+  .style22 {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 14px;
+  }
+  .style23 {color: #AF2E89}
+  .style24 {color: #AF2E89; font-size: 14px; }
+  .style25 {
+       color: #C0389B;
+       font-weight: bold;
+       font-size: 14px;
+  }
+  .style28 {font-weight: bold}
+  .style30 {color: #AF2E89; font-size: 14px; font-weight: bold; }
+  .style31 {font-family: Arial, Helvetica, sans-serif}
+  .style33 {
+       color: #626458;
+       font-size: 12px;
+       font-weight: bold;
+       font-family: Arial, Helvetica, sans-serif;
+  }
+  /*]]>
+*/</style>
+    <script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+    <script type="text/javascript">//
+<![CDATA[
+
+  /*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+  ***/
+
+  function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+  }
+
+  $(function() {
+    setInterval( "slideSwitch()", 5000 );
+  });
+
+  //]]>
+</script>
+  </head>
+  <body>
+    <div align="center">
+      <table width="1000" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td colspan="2" valign="top">
+            <img src="images/NVDS_top5.jpg" alt="NVDS" width="1000" height="193" />
+          </td>
+        </tr>
+        <tr>
+          <td width="229" valign="top" bgcolor="#E9F3E0">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td height="25" bgcolor="#FFFFFF">&#160;</td>
+              </tr>
+              <tr>
+                <td bgcolor="#E9F3E0">
+                  <!--#include file="leftsidebar.inc.html" -->
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td width="771" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <!--#include file="tabsmenu.inc.html" -->
+              <tr>
+                <td>&#160;</td>
+                <td valign="top">
+                  <div align="left">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="97%">&#160;</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div align="left"></div>
+                  <div align="left"></div>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="27%" valign="top">&#160;</td>
+                      <td width="2%" valign="top">&#160;</td>
+                    </tr>
+                    <tr>
+                      <td valign="top">
+                        <p align="left">
+                          <img src="images/uniform2.jpg" alt="Laura Padierne" width="200" height="300" />
+                        </p>
+                        <p align="left">&#160;</p>
+                        <p align="left">
+                          <img src="images/uniform1.jpg" alt="Laura Padierne" width="200" height="300" />
+                        </p>
+                      </td>
+                      <td valign="top">
+                        <div align="left"></div>
+                      </td>
+                      <td valign="top">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="10">
+                          <tr>
+                            <td bgcolor="#E9F3E0">
+                              <span class="style15">
+                              <strong class="style25">Summer Camps 2014</strong>
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td>Week #1</td>
+                                <td>June 9-13</td>
+                                <td>4-7 year olds</td>
+                                <td>Dance Camp!</td>
+                              </tr>
+                              <tr>
+                                <td>Week #2</td>
+                                <td>June 23-27</td>
+                                <td>4-7 year olds</td>
+                                <td>Dance Camp!</td>
+                              </tr>
+                              <tr>
+                                <td>Week #3</td>
+                                <td>July 7-11</td>
+                                <td>7-9 year olds</td>
+                                <td>Intermediate Dance Camp Intensive</td>
+                              </tr>
+                              <tr>
+                                <td>Week #4</td>
+                                <td>July 14-18</td>
+                                <td>7-9 year olds</td>
+                                <td>Intermediate Dance Camp Intensive</td>
+                              </tr>
+                              <tr>
+                                <td>Week #5</td>
+                                <td>July 21-25</td>
+                                <td>9-13 year olds</td>
+                                <td>Advanced Dance Camp Intensive</td>
+                              </tr>
+                              <tr>
+                                <td>Week #6</td>
+                                <td>July 28-Aug 1</td>
+                                <td>4-7 year olds</td>
+                                <td>Dance Camp!</td>
+                              </tr>
+                              <tr>
+                                <td>Week #7</td>
+                                <td>August 4-8</td>
+                                <td>4-7 year olds</td>
+                                <td>Dance Camp!</td>
+                              </tr>
+                            </table>
+
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>&#160;</td>
+          <td valign="top">&#160;</td>
+        </tr>
+        <tr>
+          <td>&#160;</td>
+          <td valign="top">
+            <div align="center">415.341.2186 | 
+            <a href="mailto:info@noevalleydance.com">info@noevalleydance.com</a>| 950 Noe Street (at Alvarado) San Francisco, CA 94114</div>
+          </td>
+        </tr>
+        <tr>
+          <td>&#160;</td>
+          <td valign="top">&#160;</td>
+        </tr>
+      </table>
+      <p>&#160;</p>
+    </div>
+  </body>
+</html>

@@ -1,207 +1,116 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Noe Valley Dance Space - San Francisco, California</title>
-
-<link rel="stylesheet" href="styles3.css" type="text/css">
-
-<style type="text/css">
-<!--
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Noe Valley Dance Space - San Francisco, California</title>
+    <link rel="stylesheet" href="styles3.css" type="text/css">
+      <style type="text/css">
+      <!--
 body {
-	background-color: #FFFFFF;
+       background-color: #FFFFFF;
 }
 -->
-
-
-
-/*** set the width and height to match your images **/
-
-#slideshow {
-    position:relative;
-    height:550px;
-}
-
-#slideshow IMG {
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:8;
-    opacity:0.0;
-}
-
-#slideshow IMG.active {
-    z-index:10;
-    opacity:1.0;
-}
-
-#slideshow IMG.last-active {
-    z-index:9;
-}
-body,td,th {
-	color: #606647;
-}
-a:link {
-	color: #AF328A;
-}
-a:visited {
-	color: #AF328A;
-}
-a:hover {
-	color: #2F3327;
-}
-a:active {
-	color: #AF328A;
-}
-.style22 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-}
-.style23 {color: #AF2E89}
-.style24 {color: #AF2E89; font-size: 14px; }
-.style25 {
-	color: #C0389B;
-	font-weight: bold;
-	font-size: 14px;
-}
-.style26 {font-size: 14px; color: #C0389B;}
-.style28 {font-weight: bold}
-.style29 {color: #666666}
-.style30 {color: #AF2E89; font-size: 14px; font-weight: bold; }
-.style31 {font-family: Arial, Helvetica, sans-serif}
-.style32 {	color: #606647;
-	font-weight: bold;
-}
-.style33 {	color: #626458;
-	font-size: 12px;
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
-}
-</style>
-
-
-<script type="text/javascript" src="jquery-1.2.6.min.js"></script>
-
-<script type="text/javascript">
-
-/*** 
-    Simple jQuery Slideshow Script
-    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
-***/
-
-function slideSwitch() {
-    var $active = $('#slideshow IMG.active');
-
-    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
-
-    // use this to pull the images in the order they appear in the markup
-    var $next =  $active.next().length ? $active.next()
-        : $('#slideshow IMG:first');
-
-    // uncomment the 3 lines below to pull the images in random order
-    
-    // var $sibs  = $active.siblings();
-    // var rndNum = Math.floor(Math.random() * $sibs.length );
-    // var $next  = $( $sibs[ rndNum ] );
-
-
-    $active.addClass('last-active');
-
-    $next.css({opacity: 0.0})
-        .addClass('active')
-        .animate({opacity: 1.0}, 1000, function() {
-            $active.removeClass('active last-active');
-        });
-}
-
-$(function() {
-    setInterval( "slideSwitch()", 5000 );
-});
-
-</script>
-</head>
-
-<body>
-<div align="center">
-  <table width="1000" border="0" cellspacing="0" cellpadding="0">
-  
-    <tr> 
-      <td colspan="2" valign="top"><img src="images/NVDS_top5.jpg" alt="NVDS" width="1000" height="193" /></td>
-    </tr>
-    <tr>
-      <td width="229" valign="top" bgcolor="#E9F3E0"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>        </tr>
-        <tr>
-          <td height="25" bgcolor="#FFFFFF">&nbsp;</td>
-        </tr>
-        <tr>
-          <td bgcolor="#E9F3E0">
-            <!--#include file="leftsidebar.inc.html" -->
-          </td>
-        </tr>
-        <tr>
-          <td bgcolor="#E9F3E0"><div align="center"><a style="width: 130px; height: 150px; font-family: arial; font-size: 11px; text-align: center; display: block;" href="http://gocitykids.parentsconnect.com/attraction/noe-valley-dance-space-1021-sanchez-street-san-francisco-ca-94114-us?xrs=pp10-social-phase2-badge-kids-party-place-LOCAL-san-francisco-ca-usa-noe-valley-dance-space-1021-sanchez-street-san-francisco-ca-94114-us"><img style="padding: 0px 15px 0px 15px; display: block;" src="http://www.parentsconnect.com/images-pclocal/parentspicks10/nominate-for-rightrail.gif"/>Nominated for best kids' party place in San Francisco, CA</a><br />
-          </div></td>
-        </tr>
-      </table></td>
-      <td width="771" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-        
-        <tr>
-          <td width="24" height="25" bgcolor="#E9F3E0">&nbsp;</td>
-          <td height="25" colspan="3" bgcolor="#E9F3E0"><div align="center"><span class="style15 style28"><a href="index.html">home</a> | <a href="bios.html">instructors</a> | <a href="classes.html">classes</a> | <a href="calendar.html">calendar</a> | <a href="info.html">info</a> | <a href="gallery.html">gallery</a> | <a href="parties.html">parties</a></span></div></td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td>
-          <td valign="top">&nbsp;</td>
-          <td valign="top">&nbsp;</td>
-          <td valign="top">&nbsp;</td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td>
-          <td colspan="3" valign="top"><span class="style15 style25">Gallery<span class="style15  style26"><a href="gallery.html"> &nbsp;&nbsp;</a></span></span><span class="style15  style26"><span class="style15  style26"><a href="gallery.html"><span class="style15 style15"> Page 1</span></a><span class="style15 style15">&nbsp;&nbsp; <a href="gallery02.html">Page 2</a>&nbsp;&nbsp; <a href="gallery03.html">Page 3</a>&nbsp;<span class="style29">&nbsp;&nbsp; click on image to view larger</span></span></span></span></td>
-          </tr>
-        <tr>
-          <td>&nbsp;</td>
-          <td valign="top" class="style15  style26"><a href="gallery05.html"><br />
-          </a></td>
-          <td width="40" valign="top">&nbsp;</td>
-          <td width="266" valign="top">&nbsp;</td>
-        </tr>
-        <tr>
-          <td width="24">&nbsp;</td>
-          <td colspan="3" valign="top"><iframe src="gallery2.html" width="700" height="550" frameborder="0"></iframe></td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td>
-          <td width="441" valign="top"><div align="left">All photography on gallery pages by Timothy McManus</div></td>
-          <td valign="top"><div align="left"></div></td>
-          <td valign="top"><div align="left"></div></td>
-        </tr>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td valign="top"><div align="center">415.341.2186  |  <a href="mailto:info@noevalleydance.com">info@noevalleydance.com</a>  |  950 Noe Street (at Alvarado) San Francisco, CA 94114</div></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td valign="top">&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td valign="top"><div align="center"><a href="http://www.j4design.com" target="_blank">created by J4 Design</a></div></td>
-    </tr>
-  </table>
-  <p>&nbsp;</p>
-</div>
-
-<map name="Map" id="Map"><area shape="rect" coords="179,64,245,92" href="index.html" />
-<area shape="rect" coords="249,67,345,95" href="bios.html" />
-<area shape="rect" coords="353,68,432,97" href="classes.html" />
-<area shape="rect" coords="439,67,520,93" href="calendar.html" />
-<area shape="rect" coords="523,66,568,91" href="info.html" />
-<area shape="rect" coords="578,63,646,92" href="gallery.html" />
-<area shape="rect" coords="654,62,717,95" href="parties.html" />
-</map></body>
+      /*** set the width and height to match your images **/ #slideshow { position:relative; height:550px; } #slideshow IMG { position:absolute; top:0; left:0; z-index:8; opacity:0.0; } #slideshow IMG.active { z-index:10; opacity:1.0; } #slideshow IMG.last-active { z-index:9; } body,td,th { color: #606647; } a:link { color: #AF328A; } a:visited { color: #AF328A; } a:hover { color: #2F3327; } a:active { color: #AF328A; } .style22 { font-family: Arial, Helvetica, sans-serif; font-size: 14px; } .style23 {color: #AF2E89} .style24 {color: #AF2E89; font-size: 14px; } .style25 { color: #C0389B; font-weight: bold; font-size: 14px; } .style26 {font-size: 14px; color: #C0389B;} .style28 {font-weight: bold} .style29 {color: #666666} .style30 {color: #AF2E89; font-size: 14px; font-weight: bold; } .style31 {font-family: Arial, Helvetica, sans-serif} .style32 { color: #606647; font-weight: bold; } .style33 { color: #626458; font-size: 12px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }</style>
+      <script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+      <script type="text/javascript">/*** Simple jQuery Slideshow Script Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc. Please link out to me if you like it :) ***/ function slideSwitch() { var $active = $('#slideshow IMG.active'); if ( $active.length == 0 ) $active = $('#slideshow IMG:last'); // use this to pull the images in the order they appear in the markup var $next = $active.next().length ? $active.next() : $('#slideshow IMG:first'); // uncomment the 3 lines below to pull the images in random order // var $sibs = $active.siblings(); // var rndNum = Math.floor(Math.random() * $sibs.length ); // var $next = $( $sibs[ rndNum ] ); $active.addClass('last-active'); $next.css({opacity: 0.0}) .addClass('active') .animate({opacity: 1.0}, 1000, function() { $active.removeClass('active last-active'); }); } $(function() { setInterval( "slideSwitch()", 5000 ); });</script>
+      <body>
+        <div align="center">
+          <table width="1000" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="2" valign="top">
+                <img src="images/NVDS_top5.jpg" alt="NVDS" width="1000" height="193" />
+              </td>
+            </tr>
+            <tr>
+              <td width="229" valign="top" bgcolor="#E9F3E0">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr></tr>
+                  <tr>
+                    <td height="25" bgcolor="#FFFFFF">&#160;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#E9F3E0">
+                      <!--#include file="leftsidebar.inc.html" -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="771" valign="top">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <!--#include file="tabsmenu.inc.html" -->
+                  <tr>
+                    <td>&#160;</td>
+                    <td valign="top">&#160;</td>
+                    <td valign="top">&#160;</td>
+                    <td valign="top">&#160;</td>
+                  </tr>
+                  <tr>
+                    <td>&#160;</td>
+                    <td colspan="3" valign="top">
+                      <span class="style15 style25">Gallery
+                      <span class="style15 style26">
+                        <a href="gallery.html">&#160;&#160;</a>
+                      </span></span>
+                      <span class="style15 style26">
+                        <span class="style15 style26">
+                          <a href="gallery.html">
+                            <span class="style15 style15">Page 1</span>
+                          </a>
+                          <span class="style15 style15">&#160;&#160; 
+                          <a href="gallery02.html">Page 2</a>&#160;&#160; 
+                          <a href="gallery03.html">Page 3</a>&#160;
+                          <span class="style29">&#160;&#160; click on image to view larger</span></span>
+                        </span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>&#160;</td>
+                    <td valign="top" class="style15 style26">
+                      <a href="gallery05.html">
+                        <br />
+                      </a>
+                    </td>
+                    <td width="40" valign="top">&#160;</td>
+                    <td width="266" valign="top">&#160;</td>
+                  </tr>
+                  <tr>
+                    <td width="24">&#160;</td>
+                    <td colspan="3" valign="top">
+                      <iframe src="gallery2.html" width="700" height="550" frameborder="0"></iframe>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>&#160;</td>
+                    <td width="441" valign="top">
+                      <div align="left">All photography on gallery pages by Timothy McManus</div>
+                    </td>
+                    <td valign="top">
+                      <div align="left"></div>
+                    </td>
+                    <td valign="top">
+                      <div align="left"></div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>&#160;</td>
+              <td valign="top">
+                <div align="center">415.341.2186 | 
+                <a href="mailto:info@noevalleydance.com">info@noevalleydance.com</a>| 950 Noe Street (at Alvarado) San Francisco, CA 94114</div>
+              </td>
+            </tr>
+            <tr>
+              <td>&#160;</td>
+              <td valign="top">&#160;</td>
+            </tr>
+          </table>
+          <p>&#160;</p>
+        </div>
+      </body>
+    </link>
+  </head>
 </html>
